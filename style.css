@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600');
+
+:root {
+  --bg-dark: #5e506d;
+  --bg-light: #fff;
+  --text-dark: #494949;
+  --text-gray: #9b9b9b;
+  --text-light: #fff;
+  --showcase-transparent: rgba(94, 80, 109, 0.75);
+}
+
+/* GENERAL STYLES */
+
+html, body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 1em;
+  font-family: Dosis;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-light)
+}
+
+/* UTILITY CLASSES */
+
+.btn {
+  border: 2px solid var(--text-light);
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+.btn-main {
+  width: 33.3vw;
+  height: 4rem;
+  line-height: 4rem;
+  margin: auto;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+}
+
+.btn-small {
+  border-radius: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background: var(--bg-light);
+  color: var(--text-gray);
+  font-weight: 600;
+}
+
+.content-box {
+  width: 60%;
+  margin: auto;
+}
+
+.content-box > p {
+  margin: 0;
+}
+
+/* NAVBAR */
+
+nav {
+  height: 15vh;
+  margin-bottom: 20vh;
+}
+
+nav img {
+  height: 100%;
+  width: auto;
+}
+
+nav ul {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  margin-right: 2rem;
+}
+
+nav li {
+  display: inline-block;
+  line-height: 15vh;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--text-light);
+  text-transform: uppercase;
+  margin: 0 1rem;
+}
+
+/* TOP SHOWCASE */
+
+#top-showcase-img {
+  background-image: url("https://images.ecosia.org/nWWT_ZHkt67-gFi8H4Loi4IBZjs=/0x390/smart/http%3A%2F%2Fgregorychong.com%2Fwp-content%2Fuploads%2F2014%2F10%2Fd700_023439-parisnov2011-pano.jpg");
+  min-height: 100vh;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#top-showcase-overlay {
+  background-color: var(--showcase-transparent);
+  min-height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.showcase-text {
+  width: 66.6vw;
+  margin: auto;
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--text-light);
+}
+
+/* SECTIONS */
+
+section {
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section .title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-light {
+  background: var(--bg-light);
+  color: var(--text-dark)
+}
+
+.section-light .title {
+  font-weight: 200;
+  color: var(--bg-dark);
+}
+
+.section-light > .content-box {
+  grid-column: 2/3;
+}
+
+.section-dark {
+  background: var(--bg-dark);
+  color: var(--text-light)
+}
+
+.section-dark .title {
+  font-weight: 300;
+  color: var(--text-light);
+}
+
+.section-dark > .content-box {
+  grid-column: 1/2;
+}
+
+/* BOTTOM SHOWCASE */
+
+#bottom-showcase {
+  height: 80vh;
+}
+
+/* FOOTER */
+
+footer {
+  height: 22vh;
+  background: var(--text-dark);
+  color: var(--text-light);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer > p {
+  font-size: 1rem;
+  grid-column: 2/3;
+}
