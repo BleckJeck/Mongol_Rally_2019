@@ -449,7 +449,7 @@ footer .social {
     margin: 1rem;
   }
 
-  footer .social > a {
+  footer .social .ext-link {
     display: none;
   }
 
