@@ -107,7 +107,6 @@ nav li {
 }
 
 /* TOP SHOWCASE */
-
 #top-showcase-img {
   background-image: url("https://images.ecosia.org/nWWT_ZHkt67-gFi8H4Loi4IBZjs=/0x390/smart/http%3A%2F%2Fgregorychong.com%2Fwp-content%2Fuploads%2F2014%2F10%2Fd700_023439-parisnov2011-pano.jpg");
   min-height: 100vh;
@@ -120,7 +119,7 @@ nav li {
 
 .showcase-overlay {
   background-color: var(--showcase-transparent);
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   position: absolute;
   top:0;
@@ -139,7 +138,6 @@ nav li {
 }
 
 /* SECTIONS */
-
 section {
   display: grid;
 }
@@ -164,7 +162,6 @@ section .title {
 } 
 
 /* ABOUT US */
-
 section#about-us {
   height: 80vh;
   grid-template-columns: 1fr 1fr;
@@ -178,11 +175,9 @@ section#about-us .image-box {
 }
 
 /* JOURNEY */
-
 #map-showcase-img {
   background-image: url(img/map.png);
-  min-height: 90vh;
-  position: relative;
+  height: 90vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -206,7 +201,6 @@ section#about-us .image-box {
 }
 
 /* FAQ */
-
 section#faq {
   display: block;
   padding: 5rem 10rem;
@@ -223,8 +217,25 @@ section#support {
   grid-template-columns: 1fr 1fr;
 }
 
-/* BOTTOM SHOWCASE */
+#text-charity {
+  padding: 5rem 0; 
+  margin-left: 15vw;
+}
 
+#text-expenses {
+  margin: 0;
+}
+
+#support img {
+  margin: auto;
+}
+
+#support img#pass-img {
+  margin-left:25vw;
+  margin-bottom: 5rem;
+}
+
+/* BOTTOM SHOWCASE */
 #bottom-showcase {
   height: 75vh;
   background: var(--bg-dark);
@@ -235,14 +246,18 @@ section#support {
   margin-bottom: 2.5rem;
 }
 
+#bottom-showcase .showcase-text {
+  padding-top: 15vh;
+}
+
 #funding-btn {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   margin-bottom: 2rem;
 }
-/* FOOTER */
 
+/* FOOTER */
 footer {
   height: 40vh;
   background: var(--text-dark);
@@ -272,26 +287,106 @@ footer .social-title {
   letter-spacing: 2px;
 }
 
-
-/* MEDIA QUERIES */
-
 /* MOBILE */
-@media(max-width: 425px) {
+@media(max-width: 415px) {
+  
   html, body {
     font-size: 0.5rem;
+    width: 100vw;
   }
 
+  section .title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .content-box {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+
+  /* MOBILE - NAVBAR */
   nav {
-    height: 10vh;
-    margin-bottom: 10vh;
+    height: 5vh;
+    margin-bottom: 30vh;
+  }
+
+  nav img {
+    height: 5vh;
   }
 
   nav ul {
-    border-top: 1px solid black;
+    display: none;
   }
 
   nav li {
     display: block;
+    line-height: 5vh;
     text-align: right;
+  }
+
+  /* MOBILE - ABOUT US */
+  section#about-us {
+    height: 40vh;
+    grid-template-columns: 1fr;
+    padding-top: 5rem;
+  }
+
+  section#about-us .image-box {
+    display: none;
+  }
+
+  /* MOBILE - JOURNEY */
+  #map-showcase-img {
+    background-image: url(img/map.png);
+    height: 50vh;
+  }
+
+  #journey .showcase-title {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    font-size: 2rem;
+  }
+
+  #journey .showcase-text {
+    width: 80vw;
+  }
+
+  /* MOBILE - SUPPORT */
+  section#support {
+    grid-template-columns: 1fr;
+  }
+
+  #text-charity {
+    padding: none;
+    margin-left: auto;
+    width: 60vw;
+  }
+
+  #text-expenses {
+    width: 60vw;
+    margin: 8rem auto;
+  }
+
+  #support img#car-img {
+    width: 60vw;
+  }
+
+  #support img#pass-img {
+    display: none;
+  }
+
+  /* MOBILE - BOTTOM SHOWCASE */
+  #bottom-showcase {
+    height: 60vh;
+  }
+
+  #bottom-showcase .showcase-text {
+    padding-top: 20rem;
+  }
+
+  #bottom-showcase .ext-link {
+    font-size: 2rem;
   }
 }
