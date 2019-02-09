@@ -205,6 +205,19 @@ section#about-us .image-box {
   letter-spacing: 2px;
 }
 
+/* FAQ */
+
+section#faq {
+  display: block;
+  padding: 5rem 10rem;
+  padding-bottom: 0;
+}
+
+section#faq .content-box {
+  margin-bottom: 5rem;
+}
+
+
 /* SUPPORT */
 section#support {
   grid-template-columns: 1fr 1fr;
