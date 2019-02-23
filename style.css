@@ -329,14 +329,10 @@ footer .social {
     width: 60vw;
   }
 
-  #top-showcase-wrap video {
-    display: none;
-  }
-
   /* MOBILE - TOP SHOWCASE */
   nav {
     height: 5vh;
-    margin-bottom: 30vh;
+    margin-bottom: 10vh;
   }
 
   nav img {
@@ -345,6 +341,20 @@ footer .social {
 
   nav ul {
     display: none;
+  }
+
+  #top-showcase-wrap {
+    display: none;
+  }  
+  
+  #top-showcase-wrap video {
+    display: none;
+  }
+
+  .showcase-overlay {
+    height: auto;
+    position: relative;
+    padding-bottom: 5rem;
   }
 
   .showcase-text {
